@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Confetti</title>
+        <canvas id="confetti"></canvas>
+        <script src="js/confetti.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/envelope.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+
+
+
+        <div class="wrapper">
+            <div class="lid one"></div>
+            <div class="lid two"></div>
+            <div class="envelope"><h3 style = "padding-top: 20vh; text-align: center; color: #fff;">Will it be a boy or a girl?</h3><a style="text-align: center; padding-left: 2vw;" href="index.html">Return to home Page</a></div>
+            <div class="letter">
+              <p>It's a boy!!!!</p>
+              
+            </div>
+          </div>
+
+        
+
+
+    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 3000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 15000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+
+        start();
+        stop();
+
+    </script>
+
+
+    </body>
+</html>
